@@ -8,7 +8,7 @@ class Projects extends Component {
   render() {
     return (
       <div className="Projects section flex-container">
-        <div className="item">
+        {/* <div className="item">
           <img src={lineup} className="thumb"/>
           <div className="overlay">
             <div className="text">
@@ -55,7 +55,21 @@ class Projects extends Component {
               <p><a href="https://github.com/mthorry/earthquakes-mapper" target="_blank" rel="noopener noreferrer">Repo <i className="fa fa-github" aria-hidden="true"/></a></p>
             </div>
           </div>
+        </div> */}
+        <div className="item">
+        <iframe  width="420" height="315"
+          src="https://www.youtube.com/embed/5TTyE7cjDJ8?autoplay=1&?controls=0">
+          </iframe> 
+          <div className="overlay">
+            <div className="text">
+              <h3>NovaGunz</h3>
+              <p><strong>Vibrant Gameplay/Online Shooter Game for Windows</strong></p>
+              <p>C++, 3DMax, Photoshop</p>
+              <p><a href="https://youtu.be/5TTyE7cjDJ8" target="_blank" rel="noopener noreferrer">Explore Video  <i className="fa fa-external-link"></i></a></p>
+              <p><a href="https://github.com/mthorry/earthquakes-mapper" target="_blank" rel="noopener noreferrer">Gunz Page <i className="fa fa-github" aria-hidden="true"/></a></p>
+            </div>
         </div>
+      </div>
       </div>
     );
   }

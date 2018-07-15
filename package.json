@@ -2,8 +2,10 @@
   "name": "ancester-site",
   "version": "0.1.0",
   "private": false,
-  "homepage":"https://Israel-Laguan.github.io/Ancester/",
+  "homepage": "https://Israel-Laguan.github.io/Ancester/",
   "dependencies": {
+    "aframe": "^0.8.2",
+    "aos": "^2.3.2",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "react-scripts": "1.0.17"
@@ -13,7 +15,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "predeploy":"npm run build",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
   "devDependencies": {

@@ -4,22 +4,19 @@ import gif from '../images/hmu.gif'
 class Footer extends Component {
   render() {
     return (
-      <div className="Footer">
-      <div> </div>
-        <div className="footer-1">
-          <img src={gif} />
-        </div>
-        <div className="footer-2">
-          <h3>Contact</h3>
-          <p><a href="mailto:mthorry@gmail.com?Subject=Hello%20there!" target="_top"><i className="fa fa-envelope i-hov" aria-hidden="true"/> mthorry@gmail.com</a></p>
-          <p><a href="https://linkedin.com/in/mthorry" target="_blank" rel="noopener noreferrer" className="footer-link"><i className="fa fa-linkedin-square i-hov" aria-hidden="true"/> Linkedin</a></p>
-          <p><a href="https://github.com/mthorry" target="_blank" rel="noopener noreferrer"><i className="fa fa-github i-hov" aria-hidden="true"/> Github</a></p>
-          <p><a href="https://medium.com/@mthorry" target="_blank" rel="noopener noreferrer"><i className="fa fa-medium i-hov" aria-hidden="true"/> Blog</a></p><br/>
-          <h3>This Site</h3>
-          <p>Made with ❤️ by <strong>Matthew Thorry</strong> using React, JavaScript and custom CSS</p>
-          <p>Check out the repo <strong><a href="https://github.com/mthorry/site" target="_blank" rel="noopener noreferrer">here on github</a></strong> © 2017</p>
-        </div>
-      </div>
+      <a-scene embedded canvas="height: 50; width: 50">
+    <a-assets>
+      <a-asset-item id="optimerBoldFont" src="https://rawgit.com/mrdoob/three.js/dev/examples/fonts/optimer_bold.typeface.json"></a-asset-item>
+    </a-assets>
+ 
+    <a-entity text-geometry="value: What's up" color="black"></a-entity>
+    <a-box position="-1 0.5 -3" rotation="0 45 0" color="#4CC3D9"></a-box>
+      <a-sphere position="0 1.25 -5" radius="1.25" color="#EF2D5E"></a-sphere>
+      <a-cylinder position="1 0.75 -3" radius="0.5" height="1.5" color="#FFC65D"></a-cylinder>
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    <a-entity text-geometry="value: Dog?; font: #optimerBoldFont"></a-entity>
+  </a-scene>
     );
   }
 }
