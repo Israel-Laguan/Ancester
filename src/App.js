@@ -1,36 +1,43 @@
-import React, { Component } from 'react';
-import Welcome from './components/Welcome'
-import Projects from './components/Projects'
-import Teaching from './components/Teaching'
-import Blog from './components/Blog'
-import About from './components/About'
-import NavBar from './components/NavBar'
-import Footer from './components/Footer'
-import arrow from './images/arrow.gif'
-import './App.css';
+import React, { Component } from "react";
+import { Switch, Route } from "react-router-dom";
+import NavContainer from "./Views/NavContainer";
+import HomeContainer from "./Views/HomeContainer";
+import Footer from "./Views/Footer";
+import LoginContainer from "./Views/LoginContainer";
+import Services from "./Views/Services";
+import AncesterAcademy from "./Views/AncesterAcademy";
+import KnowUs from "./Views/KnowUs";
+import NoMatch from "./Views/NoMatch";
+import WeCreate from "./Views/WeCreate";
+import Advise from "./Views/Advise";
 
-class App extends Component {
+const rightItems = [
+  { content: "Academy", key: "academy",  to: '/ancester-academy-launcher' },
+  { content: "Marketplace", key: "marketplace",  to: '/' },
+  { content: "Servicios", key: "servicios", to: '/services' },
+  { content: "Conócenos", key: "conócenos",  to: '/know-us' }
+];
+
+
+export default class App extends Component {
   render() {
     return (
-      <div className="App">
-          <NavBar />
-          <Welcome />
-          <div className="down-arrow">
-          <img src={arrow} alt="Sroll"  width="50px"/>
-          </div>
-        <h2 className="heading" id="about">ABOUT</h2>
-          <About />
-        <h2 className="heading" id="projects">PROJECTS</h2>
-          <Projects />
-        <h2 className="heading" id="blog">BLOG</h2>
-          <Blog />
-        <h2 className="heading" id="teaching">TEACHING</h2>
-          <Teaching />
-        <h2 className="heading" id="footer">LIKE WHAT YOU SEE?</h2>
-          <Footer />
+      <div>
+        <NavContainer rightItems={rightItems}>
+          <Switch>
+            <Route exact path="/" component={HomeContainer} />
+            <Route path="/Ancester" component={HomeContainer} />
+            <Route path='/login' component={LoginContainer} />
+            <Route path="/ancester-academy-launcher" component={AncesterAcademy} />
+            <Route path="/services" component={Services} />
+            <Route path="/know-us" component={KnowUs} />
+            <Route path="/we-create" component={WeCreate} />
+            <Route path="/advise" component={Advise} />
+            <Route component={NoMatch} />
+          </Switch>
+        </NavContainer>
+        <Footer />
       </div>
     );
   }
 }
-
-export default App;
