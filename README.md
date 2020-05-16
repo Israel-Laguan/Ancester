@@ -10,25 +10,23 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://">
-	  <img src="https://img.icons8.com/color/96/000000/full-image.png" alt="Logo"/>
+  <a href="https://ancester.github.io/Ancester/">
+	  <img src="https://github.com/Israel-Laguan/Ancester/raw/master/public/nerd.png" alt="Logo"/>
   </a>
 
   <h1 align="center">
 	Ancester
   </h1>
 
-  <p align="center">
+  <div align="center">
     
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Game Related Company Web Design Draft
     <br />
-	  🖊️
-    <a href="https://">Read the article</a>
     🐞
     <a href="https://github.com/Israel-Laguan/Ancester/issues">Report a Bug</a>
     🙋‍♂️
     <a href="https://github.com/Israel-Laguan/Ancester/issues">Request Feature</a>
-  </p>
+  </div>
 </p>
 
 ## Table of Contents
@@ -41,7 +39,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 6. [Show your support](#show-your-support)
 7. [License](#license)
 
+# The Project
 
+Comisioned to be the web site for a new Gaming company in latin america, this site is built using React and Semantic-UI. The marketplace section is really interested as it include a gallery and uses placeholder API for images and descriptions.
+
+Also, check the Mobile Version!
+
+![Ancester Preview][Ancester]
 ## Available Scripts
 
 In the project directory, you can run:
@@ -163,7 +167,8 @@ Feel free to fork this project and improve it
 [issues-open-shield]: https://img.shields.io/github/issues/Israel-Laguan/Ancester?style=for-the-badge
 [issues-url]: https://github.com/Israel-Laguan/Ancester/issues
 [issues-closed-shield]: https://img.shields.io/github/issues-closed/Israel-Laguan/Ancester?style=for-the-badge
-[badge-framework]: https://img.shields.io/badge/framework-here-9cf?style=for-the-badge
-[framework-url]: https://google.com
+[badge-framework]: https://img.shields.io/badge/framework-react-9cf?style=for-the-badge&logo=react
+[framework-url]: https://reactjs.org/
 [contributions-welcome]: https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=for-the-badge
 [badge-license]: https://img.shields.io/:license-mit-blue.svg?style=for-the-badge
+[Ancester]: https://github.com/Israel-Laguan/israel-laguan.github.io/raw/master/assets/projects/ancester.png
